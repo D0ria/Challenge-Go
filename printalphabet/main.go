@@ -5,17 +5,8 @@ import (
 )
 
 func main() {
-
-    z01.PrintRune('a')
-
-
-
-    for compteur := 97; compteur < 122; compteur ++ {
-
-        z01.PrintRune(rune(compteur))
-
-
-    }
-
-
+    for i := 97; i <= 122; i++ {
+    	z01.PrintRune(rune(i))
+}
+	z01.PrintRune(\n)
 }
