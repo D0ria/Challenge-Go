@@ -5,8 +5,8 @@ import (
 )
 
 func PrintComb2() {
-	for a := 0; a <= 7; a++ {
-		for b := a + 1; b <= 9; b++ {
+	for a := 0; a <= 9; a++ {
+		for b := 0; b <= 9; b++ {
 			if a <= b {
 				z01.PrintRune(rune(a + 48))
 				z01.PrintRune(rune(b) + 48)
