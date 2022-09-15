@@ -9,6 +9,9 @@ func Index(s string, toFind string) int {
 			if j == len(toFind)-1 {
 				return i
 			}
+			if len(toFind) == 0 {
+				return 0
+			}
 		}
 	}
 	return -1
