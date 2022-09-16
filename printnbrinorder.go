@@ -2,24 +2,24 @@ package piscine
 
 import "github.com/01-edu/z01"
 
-func PrintNbrInOrder(n int) {
-	var a [12]int
-	if n < 10 && n >= 0 {
-		z01.PrintRune(rune(n + 48))
-	} else {
-		for {
-			if n == 0 {
-				break
-			}
-			a[n%10]++
-			n /= 10
-		}
-		for index, number := range a {
-			if number != 0 {
-				for i := 0; i < number; i++ {
-					z01.PrintRune(rune(index + 48))
-				}
+func PrintNbrInOrder(nb int) {
+	var tabint []int
+	for i := nb; i > 0; i /= 10 {
+		tabint = append(tabint, i%10)
+	}
+	tabint = sortTab(tabint)
+	for _, nb := range tabint {
+		z01.PrintRune(rune(nb + 48))
+	}
+}
+
+func sortTab(tab []int) []int {
+	for i := 0; i < len(tab); i++ {
+		for l := i; l < len(tab); l++ {
+			if tab[i] < tab[l] {
+				tab[i], tab[l] = tab[l], tab[i]
 			}
 		}
 	}
+	return tab
 }

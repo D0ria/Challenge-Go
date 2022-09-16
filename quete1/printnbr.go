@@ -1,23 +1,13 @@
 package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	t := 1
-	if n < 0 {
-		t = -1
-		z01.PrintRune('-')
+	var tabint []int
+	for i := n; i > 0; i /= 10 {
+		tabint = append(tabint, i%10)
 	}
-	if n != 0 {
-		f := (n / 10) * t
-		if f != 0 {
-			PrintNbr(f)
-		}
-		k := (n % 10 * t) + '0'
-		z01.PrintRune(rune(k))
-	} else {
-		z01.PrintRune('0')
+	for i := len(tabint) - 1; i >= 0; i-- {
+		z01.PrintRune(rune(tabint[i] + 48))
 	}
 }
