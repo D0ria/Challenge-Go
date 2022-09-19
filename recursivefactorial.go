@@ -1,7 +1,7 @@
 package piscine
 
 func RecursiveFactorial(nb int) int {
-	if nb <= 25 {
+	if nb <= 19 {
 		if nb == 0 {
 			return 1
 		}
