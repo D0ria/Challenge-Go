@@ -15,7 +15,6 @@ func PrintStr(s string) {
 func CloseDoor(Door *Door) {
 	PrintStr("Door Closing...\n")
 	Door.state = "CLOSE"
-
 }
 
 func OpenDoor(Door *Door) {
@@ -43,7 +42,6 @@ func IsDoorClose(Door *Door) bool {
 
 func main() {
 	door := &Door{}
-
 	OpenDoor(door)
 	if IsDoorClose(door) {
 		OpenDoor(door)
