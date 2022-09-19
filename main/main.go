@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.IterativeFactorial(4))
+	fmt.Println(piscine.IterativeFactorial(23))
 }
