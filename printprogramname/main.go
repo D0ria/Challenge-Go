@@ -12,4 +12,5 @@ func main() {
 			z01.PrintRune(rune(v))
 		}
 	}
+	z01.PrintRune(rune('\n'))
 }
