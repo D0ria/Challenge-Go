@@ -12,6 +12,7 @@ func printStr(s string) {
 	}
 	z01.PrintRune('\n')
 }
+
 func even(nbr int) int {
 	if nbr%2 == 0 {
 		return 1
@@ -19,6 +20,7 @@ func even(nbr int) int {
 		return 0
 	}
 }
+
 func isEven(nbr int) bool {
 	if even(nbr) == 1 {
 		return true
