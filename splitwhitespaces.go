@@ -8,6 +8,7 @@ func SplitWhiteSpaces(s string) []string {
 			s1 = append(s1, mot)
 			mot = ""
 		} else if j == len(s)-1 {
+			mot += string(i)
 			s1 = append(s1, mot)
 		} else {
 			mot += string(i)
