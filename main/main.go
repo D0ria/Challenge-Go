@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Printf("%#v\n", piscine.SplitWhiteSpaces("Hello how are you?"))
+	fmt.Println(piscine.IsNumeric("010203"))
+	fmt.Println(piscine.IsNumeric("01,02,03"))
 }
