@@ -1,11 +1,6 @@
-package main
-
-import (
-	"fmt"
-	"piscine"
-)
+import "piscine"
 
 func main() {
-	fmt.Println(piscine.IsNumeric("010203"))
-	fmt.Println(piscine.IsNumeric("01,02,03"))
+	a := []int{1, 2, 3, 4, 5, 6}
+	piscine.ForEach(piscine.PrintNbr, a)
 }
