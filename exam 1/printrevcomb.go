@@ -17,8 +17,6 @@ func printrevcomb() {
 					z01.PrintRune(rune(' '))
 				}
 			}
-
 		}
-
 	}
 }
