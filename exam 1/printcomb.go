@@ -18,11 +18,7 @@ func PrintComb() {
 					z01.PrintRune(rune(c + 48))
 					z01.PrintRune(' ')
 				}
-
 			}
-
 		}
-
 	}
-
 }
