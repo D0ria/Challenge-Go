@@ -2,7 +2,7 @@ package piscine
 
 func Map(f func(int) bool, a []int) []bool {
 	var res []bool
-	for _, i := range a {
+	for i := 0; i < len(a); i++ {
 		res = append(res, f(a[i]))
 	}
 	return res
